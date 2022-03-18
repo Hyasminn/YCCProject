@@ -1,0 +1,46 @@
+<ion-header [translucent]="true" >
+  <ion-toolbar>
+
+    <ion-button slot="start" color="black">
+      <ion-menu-button menu="main-menu" ></ion-menu-button>
+    </ion-button>
+
+    <ion-title >
+      WELCOME
+    </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <img src="assets/logo.jpg" width=100% alt="">
+
+      <!-- <ion-fab vertical="bottom" horizontol="end" slot="fixed" >
+        <ion-fab-button [routerLink]="['/book-class']">
+          <ion-icon name="navigate-outline"></ion-icon>
+        </ion-fab-button>
+      </ion-fab> -->
+
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title><center>WELCOME TO YASMIN COOKING CLASS (YCC)</center></ion-card-title>
+        </ion-card-header>
+    
+        <ion-card-content>
+          <video 
+    width="100%"
+    controls="controls"
+    preload="metadata"
+    webkit-playsinline="webkit-playsinline"
+    class="videoPlayer">
+      <source src="assets/intro.mp4" type="video/mp4" /></video>
+        </ion-card-content>
+
+        <ion-card-content>
+          <h2>Class Schedule</h2>
+          <p>monday - friday</p>
+          <p>2.00pm-4.00pm</p>
+          </ion-card-content>
+      </ion-card>
+
+</ion-content>

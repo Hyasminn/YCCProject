@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="favorite">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-title class="ion-text-center">Booking Class</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+  <ion-content>
+    <div class="ion-padding">
+<ion-text>
+    <p>Please fill up enquiry and we will be in touch with you soon</p>
+  </ion-text>
+
+  <ion-item>
+    <ion-label position="floating">Name</ion-label>
+    <ion-input type="text" [(ngModel)]="post.name" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input type="email" placeholder="your@gmail.com" [(ngModel)]="post.email" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <label class="ion-padding">Date</label>
+    <input [(ngModel)]="post.date" name="date" type="date" class="form-control">
+  </ion-item>
+
+  <ion-button expand="block" color="primary" (click)="createPost(post)">
+    <ion-icon slot="start" name="send"></ion-icon>
+    Send
+  </ion-button>
+ </div>
+
+</ion-content>

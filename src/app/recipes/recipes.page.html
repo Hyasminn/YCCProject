@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-title><center>Recipes</center></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-card-content>
+  <ion-col size="12">
+    <img src="/assets/nasi goreng.jpg" width="70%" > <div align="center"></div>
+    <ion-button [routerLink]="['/nasi']" expand="full" fill="outline">
+      <!-- <ion-icon slot="end" name="school-outline"></ion-icon> -->
+      NASI GORENG
+    </ion-button>
+  </ion-col>
+  
+<div>
+  <ion-col size="12">
+    <img src="/assets/nasi lemak.jpg" width="70%"> <div align="center"></div>
+    <ion-button [routerLink]="['/lemak']" expand="full" fill="outline">
+      <!-- <ion-icon slot="end" name="school-outline"></ion-icon> -->
+      NASI LEMAK
+    </ion-button>
+  </ion-col>
+</div>
+
+<div>
+  <ion-col size="12">
+    <img src="/assets/laksa.jpg" width="70%"> <div align="center"></div>
+    <ion-button [routerLink]="['/laksa']" expand="full" fill="outline">
+      <!-- <ion-icon slot="end" name="school-outline"></ion-icon> -->
+      LAKSA
+    </ion-button>
+  </ion-col>
+</div>
+
+<div>
+  <ion-col size="12">
+    <img src="/assets/satay.jpg" width="70%"> <div align="center"></div>
+    <ion-button [routerLink]="['/satay']" expand="full" fill="outline">
+      <!-- <ion-icon slot="end" name="school-outline"></ion-icon> -->
+      CHICKEN SATAY
+    </ion-button>
+  </ion-col>
+</div>
+
+</ion-card-content>
+</ion-content>

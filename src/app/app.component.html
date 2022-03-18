@@ -1,0 +1,41 @@
+<ion-app>
+  <ion-menu content-id="main" menuId="main-menu" side="start" type="reveal">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title class="ion-text-center">Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    
+    <ion-list>
+      <ion-item [routerLink]="['/description']">
+        <ion-icon name="reader-outline" slot="start"></ion-icon>
+        <ion-label>About</ion-label>
+      </ion-item>
+
+      <ion-item [routerLink]="['/book-class']">
+        <ion-icon name="bookmark-outline" slot="start"></ion-icon>
+        <ion-label>Class Booking</ion-label>
+      </ion-item>
+
+      <ion-item [routerLink]="['/recipes']">
+        <ion-icon name="book-outline" slot="start"></ion-icon>
+        <ion-label>Recipes</ion-label>
+      </ion-item>
+
+      <ion-item [routerLink]="['/view-booking']">
+        <ion-icon name="people-outline" slot="start"></ion-icon>
+        <ion-label>Class</ion-label>
+      </ion-item>
+      
+      <ion-item [routerLink]="['/login']">
+        <ion-icon name="exit-outline" slot="start"></ion-icon>
+        <ion-label>Log Out</ion-label>
+      </ion-item>
+
+    </ion-list>
+  </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>
